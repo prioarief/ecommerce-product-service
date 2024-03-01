@@ -30,7 +30,7 @@ migrate create -ext sql -dir db/migrations create_table_xxx
 
 ## Run Migration
 ```bash
-migrate -database "mysql://root:password@tcp(localhost:3306)/golang_migration?charset=utf8mb4&parseTime=True&loc=Local" -path db/migrations up
+migrate -database "mysql://root:password@tcp(localhost:3306)/ecommerce_product_service?charset=utf8mb4&parseTime=True&loc=Local" -path db/migrations up
 ```
 
 ## Architecture
