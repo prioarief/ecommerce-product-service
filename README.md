@@ -33,6 +33,11 @@ migrate create -ext sql -dir db/migrations create_table_xxx
 migrate -database "mysql://root:password@tcp(localhost:3306)/ecommerce_product_service?charset=utf8mb4&parseTime=True&loc=Local" -path db/migrations up
 ```
 
+## Fix Database Dirty
+```bash
+migrate -database "mysql://root:password@tcp(localhost:3306)/ecommerce_product_service?charset=utf8mb4&parseTime=True&loc=Local" -path db/migrations force VERSION
+```
+
 ## Architecture
 ![alt text](https://raw.githubusercontent.com/prioarief/ecommerce-product-service/120f16f8333800c067d5aa23797c566eaca2e0b4/diagram.svg)
 
